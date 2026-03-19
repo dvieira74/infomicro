@@ -1,0 +1,16 @@
+<Window x:Class="Infomicro.Views.RemoteViewerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Infomicro - Visualizador" Height="600" Width="800"
+        WindowState="Maximized" Focusable="True"
+        KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+    <Grid Background="Black">
+        <!-- The Image control that will display incoming frames -->
+        <Image x:Name="imgScreen" Stretch="Uniform" 
+               MouseMove="ImgScreen_MouseMove" 
+               MouseLeftButtonDown="ImgScreen_MouseClick" 
+               MouseLeftButtonUp="ImgScreen_MouseClick"
+               MouseRightButtonDown="ImgScreen_MouseClick"
+               MouseRightButtonUp="ImgScreen_MouseClick" />
+    </Grid>
+</Window>

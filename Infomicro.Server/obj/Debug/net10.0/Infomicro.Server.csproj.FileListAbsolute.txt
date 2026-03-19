@@ -1,0 +1,14 @@
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\bin\Debug\net10.0\Infomicro.Server.exe
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\bin\Debug\net10.0\Infomicro.Server.deps.json
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\bin\Debug\net10.0\Infomicro.Server.runtimeconfig.json
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\bin\Debug\net10.0\Infomicro.Server.dll
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\bin\Debug\net10.0\Infomicro.Server.pdb
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\Infomicro.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\Infomicro.Server.AssemblyInfoInputs.cache
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\Infomicro.Server.AssemblyInfo.cs
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\Infomicro.Server.csproj.CoreCompileInputs.cache
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\Infomicro.Server.dll
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\refint\Infomicro.Server.dll
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\Infomicro.Server.pdb
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\Infomicro.Server.genruntimeconfig.cache
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\ref\Infomicro.Server.dll

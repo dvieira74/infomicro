@@ -1,0 +1,134 @@
+<Window x:Class="Infomicro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Infomicro - Acesso Remoto" Height="390" Width="520"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Icon="icone.png">
+
+    <Window.Resources>
+        <!-- Estilo dos TextBoxes com borda neon azul -->
+        <Style x:Key="NeonTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="#0A1A40"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="BorderBrush" Value="#3A7EFF"/>
+            <Setter Property="CaretBrush" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="3">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#3A7EFF" BlurRadius="10" ShadowDepth="0" Opacity="0.7"/>
+                            </Border.Effect>
+                            <ScrollViewer x:Name="PART_ContentHost" Margin="{TemplateBinding Padding}" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Estilo do botão Conectar -->
+        <Style x:Key="NeonButton" TargetType="Button">
+            <Setter Property="Background" Value="#0D2060"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderBrush" Value="#5AA0FF"/>
+            <Setter Property="BorderThickness" Value="1.5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4">
+                            <Border.Effect>
+                                <DropShadowEffect Color="#5AA0FF" BlurRadius="18" ShadowDepth="0" Opacity="0.9"/>
+                            </Border.Effect>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#1A3A8A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#0A1A50"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <!-- Fundo com gradiente azul escuro radial -->
+    <Border>
+        <Border.Background>
+            <RadialGradientBrush Center="0.5,0.4" GradientOrigin="0.5,0.4" RadiusX="0.7" RadiusY="0.7">
+                <GradientStop Color="#0E2D6B" Offset="0"/>
+                <GradientStop Color="#051535" Offset="1"/>
+            </RadialGradientBrush>
+        </Border.Background>
+
+        <Grid Margin="28,20,28,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="16"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="24"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Label: Seu Código de Acesso -->
+            <TextBlock Grid.Row="0"
+                       Text="Seu Código de Acesso:"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       FontSize="14"
+                       Margin="0,0,0,6"/>
+
+            <!-- Campo: Código local (read-only) -->
+            <TextBox x:Name="txtLocalCode"
+                     Grid.Row="1"
+                     Style="{StaticResource NeonTextBox}"
+                     IsReadOnly="True"
+                     Height="58"
+                     Text="Conectando ao Servidor..."/>
+
+            <!-- Label: Código do Parceiro -->
+            <TextBlock Grid.Row="3"
+                       Text="Código do Parceiro:"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       FontSize="14"
+                       Margin="0,0,0,6"/>
+
+            <!-- Campo: Código do parceiro -->
+            <TextBox x:Name="txtRemoteCode"
+                     Grid.Row="4"
+                     Style="{StaticResource NeonTextBox}"
+                     Height="58"/>
+
+            <!-- Botão Conectar centralizado -->
+            <Button x:Name="btnConnect"
+                    Grid.Row="6"
+                    Style="{StaticResource NeonButton}"
+                    Content="Conectar"
+                    Height="46"
+                    Width="220"
+                    HorizontalAlignment="Center"
+                    Click="BtnConnect_Click"/>
+        </Grid>
+    </Border>
+</Window>
