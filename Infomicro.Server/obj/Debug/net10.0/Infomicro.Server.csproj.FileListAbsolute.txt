@@ -12,3 +12,4 @@ C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\r
 C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\Infomicro.Server.pdb
 C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\Infomicro.Server.genruntimeconfig.cache
 C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\ref\Infomicro.Server.dll
+C:\Users\Deone\Documents\Projetos\Infomicro\Infomicro.Server\obj\Debug\net10.0\Infomicro.Server.sourcelink.json

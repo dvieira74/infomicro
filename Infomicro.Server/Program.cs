@@ -15,7 +15,10 @@ namespace Infomicro.Server
 
         static async Task Main(string[] args)
         {
-            int port = 6666;
+            // Railway injects the PORT env variable automatically
+            string portEnv = Environment.GetEnvironmentVariable("PORT");
+            int port = int.TryParse(portEnv, out int p) ? p : 6666;
+
             var listener = new TcpListener(IPAddress.Any, port);
             listener.Start();
             Console.WriteLine($"[INFO] Infomicro Relay Server started on port {port}...");

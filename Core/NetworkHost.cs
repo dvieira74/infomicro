@@ -19,8 +19,8 @@ namespace Infomicro.Core
 
         public bool IsRunning { get; private set; }
         public bool IsClientConnected { get; private set; }
-        public string ServerAddress { get; set; } = "127.0.0.1";
-        public int ServerPort { get; set; } = 6666;
+        public string ServerAddress { get; set; } = "autorack.proxy.rlwy.net";
+        public int ServerPort { get; set; } = 32080;
 
         public async Task StartAsync()
         {

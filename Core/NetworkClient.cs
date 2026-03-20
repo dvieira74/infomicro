@@ -17,8 +17,8 @@ namespace Infomicro.Core
         public event Action<byte[]> ImageReceived;
 
         public bool IsConnected => _client != null && _client.Connected;
-        public string ServerAddress { get; set; } = "127.0.0.1";
-        public int ServerPort { get; set; } = 6666;
+        public string ServerAddress { get; set; } = "autorack.proxy.rlwy.net";
+        public int ServerPort { get; set; } = 32080;
 
         public async Task ConnectAsync(string code)
         {

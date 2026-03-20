@@ -1,0 +1,12 @@
+---
+
+## Recomendação: Railway.app (Mais Fácil e Gratuito)
+
+O **Railway** é a opção mais simples para hospedar o `Infomicro.Server`:
+
+1. Crie uma conta em [railway.app](https://railway.app/)
+2. Conecte ao GitHub e faça upload do projeto `Infomicro.Server`
+3. O Railway detecta automaticamente que é um projeto .NET e faz o deploy
+4. Ele expõe uma **porta TCP pública** — você copia o endereço e coloca no aplicativo
+
+Quer que eu configure o projeto `Infomicro.Server` para ficar pronto para o deploy no Railway? (Isso envolve adicionar um `Dockerfile` e `railway.toml` simples ao projeto)
