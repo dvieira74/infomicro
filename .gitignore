@@ -1,0 +1,24 @@
+# .NET and Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.sln.dotsettings.user
+*.userosscache
+*.sln.docstates
+
+# macOS
+.DS_Store
+
+# IDE and other tools
+.idea/
+.vscode/
+*.swp
+*.bak
+*.tmp
+/tmp/
+
+# Logs
+log.txt
+*.log

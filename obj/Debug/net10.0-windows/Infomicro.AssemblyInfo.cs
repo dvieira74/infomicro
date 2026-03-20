@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Infomicro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76f86f6bc5e9a0d903f51e4381b43fdeee510e18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18705bfb4eab8bafba5ae11d6f0c5ceea838c548")]
 [assembly: System.Reflection.AssemblyProductAttribute("Infomicro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Infomicro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
